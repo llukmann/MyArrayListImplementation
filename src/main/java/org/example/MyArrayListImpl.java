@@ -62,7 +62,7 @@ public class MyArrayListImpl<T> implements MyList<T> {
      * Method that provides dynamic expansion of an array when it's full
      */
     private void resize(){
-        if (values.length == size) {
+        if (size >= values.length - 1) {
             int newSize = size * 2 + 1;
             T[] newArray = (T[]) new Object[newSize];
             System.arraycopy(values, 0, newArray, 0, size);

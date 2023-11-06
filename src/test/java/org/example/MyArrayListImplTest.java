@@ -83,7 +83,7 @@ class MyArrayListImplTest {
         MyList<Integer> list = new MyArrayListImpl<>();
 
         for (int i = 0; i < 100; i++) {
-            list.addByIndex(i, (int) (Math.random() * 10));
+            list.addByIndex(0, (int) (Math.random() * 10));
             assertEquals(i + 1, list.getSize());
         }
     }
